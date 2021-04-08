@@ -1,0 +1,64 @@
+// Dice
+
+// var n = Math.random(); 
+// n = n * 6
+// n = Math.floor(n) +1; 
+
+
+
+
+// Love Calculator 
+
+// prompt("What's your name?");
+// prompt("What's your partner's name?");
+
+// var lovePercent = Math.random() * 100; 
+//     lovePercent = Math.round(lovePercent) + 5;
+
+// if (lovePercent > 70) {
+//     alert(lovePercent + "% chance of matching between you and your partner." + "You are each other's destiny.");
+// }
+
+
+// if (lovePercent > 30 && lovePercent <= 70){
+//      alert(lovePercent + "% chance of matching between you and your partner.");
+// }
+
+// if (lovePercent <= 30){
+//      alert(lovePercent + "% chance of matching between you and your partner." + "Being friends is a better option.");
+// }
+
+
+
+// BMI Indicator 
+
+    
+// var weight = prompt("Enter your weight:");
+// var height = prompt("Enter your height:");
+
+var weight = prompt("weight");
+var height = prompt("height");
+
+function bmiCalculator(weight, height){
+
+
+    var bmi = weight / (Math.pow(height, 2));
+
+    bmi = Math.round(bmi);   
+
+    
+
+    if (bmi < 18.5){
+        var interpretation = "Your BMI is " + bmi + ", so you are underweight.";
+    
+    
+    if (bmi >= 18.5 && bmi <= 24.9){
+        var interpretation = "Your BMI is " + bmi + ", so you have a normal weight.";
+    }
+    
+    if (bmi > 24.9) {
+        var interpretation = "Your BMI is " + bmi + ", so you are overweight.";
+    }
+
+    return interpretation;
+    }
